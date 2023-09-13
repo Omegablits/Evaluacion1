@@ -1,0 +1,47 @@
+<ion-content [fullscreen]="true">
+  <div class="logo" style="margin-top: 70px"></div>
+  <ion-menu side="end" contentId="main-content">
+    <ion-header>
+      <ion-toolbar color="warning">
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+
+      <!-- Agregar elementos de menú -->
+      <ion-list>
+        <ion-item button (click)="cerrarSesion()">
+          <ion-icon name="exit-outline" slot="start"></ion-icon>
+          Cerrar Sesión
+        </ion-item>
+        <ion-item button (click)="mostrarAyuda()">
+          <ion-icon name="help-circle-outline" slot="start"></ion-icon>
+          Ayuda
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-back-button defaultHref="/ruta-de-regreso"></ion-back-button>
+        </ion-buttons>
+        <ion-title>
+          <img src="./../../../assets/img/regist.png" alt="" width="300" height="50" style="margin-top: 12px;">
+        </ion-title>
+        <ion-buttons slot="end">
+          <ion-menu-button class="custom-logo" style="margin-top: 15px;"></ion-menu-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content style="text-align: center;">
+      <ion-title style="text-align: center;"><h1>Bienvenido</h1></ion-title>
+      <div style="margin-top: 30px;"><ion-button class="ion-text-wrap" style="width: 350px" class="boton" (click)="ir1()"> Registrar asistencia clase actual </ion-button></div>
+      <div style="margin-top: 30px;"><ion-button class="ion-text-wrap" style="width: 350px" class="boton" (click)="ir2()">Ver mi asistencia</ion-button></div>
+      <div style="margin-top: 30px;"><ion-button class="ion-text-wrap" style="width: 350px" class="boton" (click)="ir3()">Asignaturas reprobadas y aprobadas</ion-button></div>
+      <div style="margin-top: 30px;"><ion-button class="ion-text-wrap" style="width: 350px" class="boton" (click)="ir4()">Cambiar contraseña</ion-button></div>
+    </ion-content>
+  </div>
+</ion-content>
+

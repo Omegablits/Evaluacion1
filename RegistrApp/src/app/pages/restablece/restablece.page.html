@@ -1,0 +1,40 @@
+<ion-content [fullscreen]="true" class="fondo">
+  
+  <div class="logo" style="margin-top : 70px"></div>
+
+  <ion-card color="light" style="margin-top : 15px">
+    <ion-card-header>
+      <ion-card-title>Restablece tu contraseña</ion-card-title>
+      <ion-card-subtitle style="text-align: center;">Llena los campos para cambiar tu contraseña</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <div class="contenedor-input">
+        <div class="usuario">
+          <img src="../../../assets/img/usuario.png" width="20" height="20">
+        </div>
+        <div style="margin-left: 10px;">
+          <ion-input [(ngModel)]="usuario" label="Usuario" labelPlacement="floating"
+           placeholder="ingrese"></ion-input>
+        </div>
+      </div>
+  
+      <div class="contenedor-input">
+        <div class="password">
+          <img src="../../../assets/img/contraseña.png" width="20" height="20">
+        </div>
+        <div style="margin-left: 10px;">
+          <ion-input [(ngModel)]="password" label="Nueva contraseña" type="password" 
+          labelPlacement="floating"
+           placeholder="ingrese"></ion-input>
+        </div>
+      </div>
+
+      <div style="margin: 15px;">
+        <ion-button color ="warning" expand="block" (click)="irMenu()">Restablecer</ion-button>
+      </div>
+
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+

@@ -1,0 +1,95 @@
+<ion-content [fullscreen]="true">
+  <div class="logo" style="margin-top: 70px"></div>
+  <ion-menu side="end" contentId="main-content">
+    <ion-header>
+      <ion-toolbar color="warning">
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+
+      <!-- Agregar elementos de menú -->
+      <ion-list>
+        <ion-item button (click)="cerrarSesion()">
+          <ion-icon name="exit-outline" slot="start"></ion-icon>
+          Cerrar Sesión
+        </ion-item>
+        <ion-item button (click)="mostrarAyuda()">
+          <ion-icon name="help-circle-outline" slot="start"></ion-icon>
+          Ayuda
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-back-button defaultHref="/ruta-de-regreso"></ion-back-button>
+        </ion-buttons>
+        <ion-title>
+          <img src="./../../../assets/img/regist.png" alt="" width="300" height="50" style="margin-top: 12px;">
+        </ion-title>
+        <ion-buttons slot="end">
+          <ion-menu-button class="custom-logo" style="margin-top: 15px;"></ion-menu-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content style="text-align: center;">
+      <ion-title class="titulo">ASISTENCIA</ion-title>
+      <ion-accordion-group style="margin-top: 30px;">
+        <ion-accordion value="first">
+          <ion-item slot="header" color="light">
+            <ion-label>Arquitectura</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">
+            <p style="margin-bottom: 20px;" style="text-align: left;">FECHA</p> 
+            <p style="margin-bottom: 20px;" style="text-align: left;">Martes, 08 de Agosto de <br> 2023</p>
+            <p class="asistencia" style="padding-left: 30px;" style="text-align: right;">Asistencia</p>
+            <p class="presente" style="padding-left: 30px;" style="text-align: right;">Presente</p>
+
+            <p style="margin-bottom: 20px;" style="text-align: left;">Viernes, 11 de Agosto de <br> 2023</p>
+            <p class="presente" style="padding-left: 30px;" style="text-align: right;">Presente</p>
+
+            <p style="margin-bottom: 20px;" style="text-align: left;">Martes, 18 de Agosto de <br> 2023</p>
+            <p class="presente" style="padding-left: 30px;" style="text-align: right;">Ausente</p>
+          </div>
+        </ion-accordion>
+        <ion-accordion value="second">
+          <ion-item slot="header" color="light">
+            <ion-label>Calidad De Software</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">
+            <p style="margin-bottom: 20px;" style="text-align: left;">FECHA</p> 
+            <p style="margin-bottom: 20px;" style="text-align: left;">Miercoles, 06 de Septiembre de <br> 2023</p>
+            <p class="asistencia" style="padding-left: 30px;" style="text-align: right;">Asistencia</p>
+            <p class="presente" style="padding-left: 30px;" style="text-align: right;">Ausente</p>
+
+            <p style="margin-bottom: 20px;" style="text-align: left;">Jueves, 12 de Agosto de <br> 2023</p>
+            <p class="presente" style="padding-left: 30px;" style="text-align: right;">Presente</p>
+
+            <p style="margin-bottom: 20px;" style="text-align: left;">Lunes, 16 de Agosto de <br> 2023</p>
+            <p class="presente" style="padding-left: 30px;" style="text-align: right;">Presente</p>
+          </div>
+        </ion-accordion>
+        <ion-accordion value="third">
+          <ion-item slot="header" color="light">
+            <ion-label>Inglés Intermedio</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">
+            <p style="margin-bottom: 20px;" style="text-align: left;">FECHA</p> 
+            <p style="margin-bottom: 20px;" style="text-align: left;">Lunes, 28 de Agosto de <br> 2023</p>
+            <p class="asistencia" style="padding-left: 30px;" style="text-align: right;">Asistencia</p>
+            <p class="presente" style="padding-left: 30px;" style="text-align: right;">Ausente</p>
+
+            <p style="margin-bottom: 20px;" style="text-align: left;">Miercoles, 30 de Agosto de <br> 2023</p>
+            <p class="presente" style="padding-left: 30px;" style="text-align: right;">Presente</p>
+
+            <p style="margin-bottom: 20px;" style="text-align: left;">Martes, 12 de Septiembre de <br> 2023</p>
+            <p class="presente" style="padding-left: 30px;" style="text-align: right;">Ausente</p>
+          </div>
+        </ion-accordion>
+      </ion-accordion-group>
+    </ion-content>
+  </div>
+</ion-content>

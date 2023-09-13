@@ -1,0 +1,25 @@
+.fondo{
+    --background: url(./../../../assets/img/fondologin.png) 0/100% 100%;
+}
+
+ion-menu-button.custom-logo::before {
+    content: '';
+    display: inline-block;
+    width: 30px; /* Ajusta el ancho según tus necesidades */
+    height: 30px; /* Ajusta la altura según tus necesidades */
+    background-image: url('./../../../assets/img/usuario2.png');
+    background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    /* Puedes agregar otros estilos según tus preferencias, como margen o padding */
+  }
+
+.boton {
+    --border-radius: 5%;
+    height: 80px;
+    margin-top: 15px;
+    --background: #042e54;
+}
+
+ion-toolbar {
+    --background: #042e54; /* Cambia #ff0000 al color que desees */
+  }

@@ -1,0 +1,52 @@
+.fondo{
+    --background: url(./../../../assets/img/fondologin.png) 0/100% 100%;
+    }
+    
+  .logo{
+  
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: solid 1px black;
+    background: url(./../../../assets/img/qr.PNG) 0/100%;
+    margin: auto;
+  }
+  
+  
+  ion-card {
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 5%;
+  }
+  
+  
+  ion-card-title {
+    color: blue;
+    width: 100%;
+    text-align: center; /* Para centrar el texto horizontalmente */
+  }
+  
+  .usuario{
+    position: fixed;
+    right: 30px;
+    margin-top: 30px;
+  }
+  
+  .password{
+    position: fixed;
+    right: 30px;
+    margin-top: 30px;
+  }
+  
+  .checkbox{
+    text-align: center;
+  }
+  
+  .texto{
+    text-align: center;
+  }
